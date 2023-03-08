@@ -1,0 +1,469 @@
+header {
+    padding-top: 10px;
+    background: #ecc7fd;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#carouselAutoplaying {
+    position: relative;
+    z-index: 0;
+}
+
+/*------MENÚ DE NAVEGACIÓN------*/
+.navbarNav {
+    padding-top: 0.5rem;
+}
+
+.navbar-nav li a {
+    font-size: 15px;
+}
+
+.navbar-nav li {
+    margin-right: 10px;
+}
+
+.form-extend {
+    width: 100%;
+}
+
+/*-----FRANJAS-----*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.my-row {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#my-row-01 {
+    padding-top: 300px;
+    background-image: linear-gradient(to bottom, #220056, #350d6b, #471d81, #5b2c98, #6e3baf);
+}
+
+#franja_accion {
+    background: #f8eebb;
+}
+
+#pre-piepagina {
+    background: #220057;
+}
+
+#piepagina {
+    background: #0f0124;
+}
+
+/*------CAJAS CANCIONES------*/
+.caja_canciones {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    overflow: hidden;
+    /*para que el contenido no salga fuera de la propia caja*/
+    /*padding:1rem;*/
+    box-shadow: 0 .25rem 1.75rem white;
+    border-radius: 0.4rem;
+}
+
+/*------CAJAS ICONOS INDEX------*/
+.caja_iconos {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    overflow: hidden;
+    /*para que el contenido no salga fuera de la propia caja*/
+    /*padding:1rem;*/
+    box-shadow: 0 .25rem 1.75rem white;
+    border-radius: 0.4rem;
+}
+
+/*-----CAJA FORMULARIO CONTACTO----*/
+.chica-contacto {
+    width: 300px;
+}
+
+.caja_formulario {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    padding: 1rem;
+    box-shadow: 0 .25rem 1.75rem white;
+    border-radius: 0.4rem;
+}
+
+/*----BOTÓN----*/
+.btn {
+    cursor: pointer;
+}
+
+/*----TÍTULOS----*/
+.titulo-grande {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 30px;
+    background-color: #870aa6;
+    font-weight: bold;
+}
+
+.titulo-mediano {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ecc7fd;
+}
+
+.titulo-bar {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #c460dd;
+}
+
+.titulo-cancion {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.titulo-formulario {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin: 20px 0;
+    color: white;
+}
+
+/*----TEXTOS----*/
+.contenido-mediano {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    margin: 20px 0;
+    color: white;
+}
+
+.contenido-pequeño {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    margin: 20px 0;
+    color: white
+}
+
+.texto-icono {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin: 20px 0;
+    color: white
+}
+
+.calle-bar {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin: 20px 0;
+    color: white;
+}
+
+/*----CALL TO ACTION----*/
+.contenido-call {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.imagen-call {
+    width: 100px;
+    border-radius: 100px;
+}
+
+/*------GALERÍA------*/
+.wrap {
+    width: 350px;
+    margin: 20px auto;
+    display: block;
+    justify-content: center;
+    position: relative;
+}
+
+.tarjeta-wrap {
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.tarjeta {
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    background: #9a77c8;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+
+.adelante,
+.atras {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.adelante {
+    width: 100%;
+}
+
+.atras {
+    position: fixed;
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tarjeta-wrap:hover .tarjeta {
+    transform: rotateY(180deg);
+}
+
+.card1 {
+    background-image: url(img/galeria01.jpg);
+    background-size: cover;
+}
+
+.card2 {
+    background-image: url(img/galeria02.jpg);
+    background-size: cover;
+}
+
+.card3 {
+    background-image: url(img/galeria03.jpg);
+    background-size: cover;
+}
+
+.card4 {
+    background-image: url(img/galeria04.jpg);
+    background-size: cover;
+}
+
+.card5 {
+    background-image: url(img/galeria05.jpg);
+    background-size: cover;
+}
+
+.card6 {
+    background-image: url(img/galeria06.jpg);
+    background-size: cover;
+}
+
+/*-----HOVER-----*/
+.btn:hover {
+    transform: translateY(-.15rem);
+    background-color: #bc48c9;
+}
+
+.nav-item:hover {
+    background-color: #bc48c9;
+}
+
+a:hover {
+    color: #bc48c9;
+}
+
+/*-----ENLACES-----*/
+a {
+    color: #ecc7fd;
+}
+
+.cliquea {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    size: 15px;
+    color: #5a1386;
+}
+
+/*-----PIE DE PÁGINA-----*/
+.texto-pie-pagina {
+    color: white;
+    font-size: 15px;
+}
+
+footer h5 {
+    color: #a154c5;
+    font-weight: bold;
+}
+
+footer a {
+    color: #ecc7fd;
+}
+
+footer .list-inline-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+/*------------Media-queries------------*/
+/* XS */
+@media (min-width: 300px) {}
+
+/* SM */
+@media (min-width: 576px)
+
+/*A partir de este tamaño, ponemos un tamaño para TABLET*/
+    {
+
+    .titulo-grande {
+        font-size: 40px;
+    }
+}
+
+/* MD */
+@media (min-width: 768px)
+
+/*A partir de este tamaño, ponemos un tamaño para PC. */
+    {
+
+    /*----TÍTULOS----*/
+    .titulo-grande {
+        font-size: 40px;
+    }
+
+    .titulo-mediano {
+        font-size: 30px;
+    }
+
+    .titulo-bar {
+        font-size: 30px;
+    }
+
+    .titulo-cancion {
+        font-size: 23px;
+    }
+
+    .titulo-formulario {
+        font-size: 25px;
+    }
+
+    /*----TEXTOS----*/
+    .contenido-mediano {
+        font-size: 30px;
+    }
+
+    .contenido-pequeño {
+        font-size: 20px;
+    }
+
+    .texto-icono {
+        font-size: 25px;
+    }
+
+    .calle-bar {
+        font-size: 25px;
+    }
+
+
+    /*----CALL TO ACTION----*/
+    .contenido-call {
+        font-size: 25px;
+    }
+
+    .imagen-call {
+        width: 200px;
+        border-radius: 100px;
+    }
+
+    /*------GALERÍA------*/
+    .wrap {
+        width: 700px;
+    }
+
+    .tarjeta {
+        width: 600px;
+        height: 400px;
+    }
+
+    .virginia {
+        width: 500px;
+    }
+
+    /*-----CAJA FORMULARIO CONTACTO----*/
+    .chica-contacto {
+        width: 800px;
+    }
+
+    .caja_formulario {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+}
+
+/* LG */
+@media (min-width: 992px) {
+
+    /*------GALERÍA------*/
+    .wrap {
+        width: 1100px;
+    }
+
+    .tarjeta {
+        width: 400px;
+        height: 300px;
+    }
+
+    .titulo-grande {
+        font-size: 60px;
+    }
+
+    .titulo-mediano {
+        font-size: 40px;
+    }
+
+    .titulo-formulario {
+        font-size: 30px;
+    }
+
+    .titulo-cancion {
+        font-size: 27px;
+    }
+
+    /*----CALL TO ACTION----*/
+    .contenido-call {
+        font-size: 30px;
+    }
+
+}
+
+/* XL */
+@media (min-width: 1200px) {
+
+    /*------GALERÍA------*/
+    .wrap {
+        width: 800px;
+    }
+
+    .tarjeta {
+        width: 550px;
+        height: 400px;
+    }
+}
